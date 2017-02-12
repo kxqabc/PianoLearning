@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/PlayMidiLayout"
+<<<<<<< dd36a519de460df8b8c8b33b798e54ff3bc6f787
+    android:background="@drawable/background"
+=======
+    android:background="@drawable/background2"
+>>>>>>> 加入手动改变键面的功能
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--首字母大小的id：PlayMidiLayout是整个View的id；首字母小写的id：playMidiLayout是产生动画的View的id（用于快进、快退时清除View中的动画）。-->
+    <TextView
+        android:id="@+id/timeScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<<<<<<< dd36a519de460df8b8c8b33b798e54ff3bc6f787
+=======
+    <RadioGroup
+        android:id="@+id/pianoPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/pageOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="键面1"/>
+        <RadioButton
+            android:id="@+id/pageTwo"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="键面2"/>
+        <RadioButton
+            android:id="@+id/pageThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="键面3"/>
+    </RadioGroup>
+>>>>>>> 加入手动改变键面的功能
+
+    <ImageButton
+        android:id="@+id/pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_above="@+id/pause"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/fastForward"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/forward"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/pause"
+        android:layout_marginStart="38dp" />
+
+    <ImageButton
+        android:id="@+id/rewind"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rewind"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/pause" />
+    <RelativeLayout
+        android:id="@+id/playMidiLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+</RelativeLayout>
